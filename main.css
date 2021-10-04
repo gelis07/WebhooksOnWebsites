@@ -1,0 +1,128 @@
+body{
+    background-color: #481D24;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+#ContactTip{
+    font-family: rubik;
+    text-align: center;
+    color: #FF9480;
+    font-size: 1rem;
+}
+#ContactText{
+    font-family: rubik;
+    color: #C69C72;
+    font-size: 5vw;
+}
+#InputField{
+    width: 50%;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+    background-color: #C5283D;
+    font-size: 1em;
+    font-family: rubik;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+#SendMessage{
+    position: absolute;
+    width: 8%;
+    height: 50px;
+    bottom: -8%;
+    right: 23.5%;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    background-color: #009FB7;
+    color: #023C40;
+    font-family: rubik;
+    cursor: pointer;
+    animation: Btn1, 1s;
+    font-size: 1vw;
+    transition: background-color 1s;
+}
+#MessageSent{
+    position: absolute;
+    width: 8%;
+    height: 50px;
+    bottom: -18%;
+    right: 23.5%;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    color: #72C675;
+    opacity: 0;
+    font-family: rubik;
+    cursor: pointer;
+    transition: opacity 2s;
+}
+#MessageFailed{
+    position: absolute;
+    width: 8%;
+    height: 50px;
+    bottom: -18%;
+    right: 23.5%;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    color: #C67272;
+    opacity: 0;
+    font-family: rubik;
+    cursor: pointer;
+    transition: opacity 2s;
+    
+}
+#SendMessage:hover{
+    animation: HoverBtn1, 1s;
+    background-color: #A8B5D2;
+}
+.Name-Input input{
+    border: none;
+    appearance: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 120%;
+    outline: none;
+    background-color: #C5283D;
+    font-family: rubik;
+    color: #222;
+}
+.Name-Input{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-family: rubik;
+    margin-right: 35%;
+}
+.Name-Input .placeholder{
+    position: absolute;
+    left: 12px;
+    color: #222;
+    opacity: 0.7;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    font-family: rubik;
+    transition: 
+    top 0.3s ease,
+    font-size 0.3s ease,
+    color 0.3s ease;
+}
+.Name-Input input:valid + .placeholder{
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+}
+.Name-Input input:focus + .placeholder{
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+}
