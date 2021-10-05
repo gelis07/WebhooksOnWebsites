@@ -1,8 +1,3 @@
-window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader-wrapper");
-    console.log(loader)
-    loader.className += " hidden"; // class "loader hidden"
-});
 /*
 whurl variable should be equal to your webhooks link!
 
