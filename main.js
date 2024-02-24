@@ -15,16 +15,18 @@ hide this link!
 whurl = ""
 var str= "";
 var name= "";
+var ImageURL = "";
 function f1(){
     name = document.getElementById("NameInput").value;
     str = document.getElementById("InputField").value;
-    console.log(document.getElementById("InputField").value)
+    ImageURL = document.getElementById("ImgInput").value;
 }
 function send(){
     f1();
     const msg = {
         "content": str,
-        "username": name
+        "username": name,
+        "avatar_url": ImageURL
     };
     console.log(msg)
     if(str == ""){
